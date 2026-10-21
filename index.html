@@ -961,5 +961,20 @@ renderHome();
 updateAddFormMode();
 showPage("home");
 </script>
+  
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+  const SUPABASE_URL = "https://isyepafduzjgibhretmu.supabase.co";
+  const SUPABASE_KEY = "sb_publishable__ZfRlaepuPV0YN-_GuLFdA_els1A2vn";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+  );
+
+  console.log("Panda Academy: Supabase подключён");
+</script>
+</body>
+
 </body>
 </html>
